@@ -13,8 +13,8 @@
   "scripts": {
     "dev": "vite",
     "build": "npm run build:client && npm run build:server",
-    "build:client": "vite build",
-    "build:server": "vite build --config vite.config.server.ts",
+    "build:client": "quasar build -m spa",
+    "build:server": "quasar build -m ssr",
     "start": "node dist/server/node-build.mjs",
     "vercel-build": "npm run build",
     "test": "vitest --run",
