@@ -11,15 +11,12 @@
     ]
   },
   "scripts": {
-    "dev": "vite",
-    "build": "npm run build:client && npm run build:server",
-    "build:client": "quasar build -m spa",
-    "build:server": "quasar build -m ssr",
-    "start": "node dist/server/node-build.mjs",
-    "vercel-build": "npm run build",
-    "test": "vitest --run",
-    "format.fix": "prettier --write .",
-    "typecheck": "tsc"
+  "dev": "vite",
+  "build": "vite build",
+  "start": "vite preview",
+  "test": "vitest --run",
+  "format.fix": "prettier --write .",
+  "typecheck": "tsc"
   },
   "dependencies": {
     "dotenv": "^17.2.1",
