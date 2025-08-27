@@ -5,9 +5,6 @@
   "pkg": {
     "assets": [
       "dist/spa/*"
-    ],
-    "scripts": [
-      "dist/server/**/*.js"
     ]
   },
   "scripts": {
