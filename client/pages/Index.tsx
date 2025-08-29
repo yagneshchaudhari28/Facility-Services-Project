@@ -142,14 +142,16 @@ export default function Index() {
                   Get Free Quote
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-2 border-white text-white hover:bg-white hover:text-brand-navy shadow-xl hover-lift backdrop-blur-sm"
-                >
-                  <Phone className="mr-2 w-5 h-5" />
-                  Call: 9890273333
-                </Button>
+                <a href="tel:9890273333">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-2 border-white text-white hover:bg-white hover:text-brand-navy shadow-xl hover-lift backdrop-blur-sm"
+                  >
+                    <Phone className="mr-2 w-5 h-5" />
+                    Call: 9890273333
+                  </Button>
+                </a>
               </div>
 
               {/* Animated Statistics */}
@@ -544,43 +546,37 @@ export default function Index() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                image:
-                  "/gallary-img-1.jpeg",
+                image: "/gallary-img-1.jpeg",
                 title: "Security Personnel on Duty",
                 category: "Security Services",
                 gradient: "from-brand-primary to-brand-secondary",
               },
               {
-                image:
-                  "/gallary-img-2.jpeg",
+                image: "/gallary-img-2.jpeg",
                 title: "Professional Facility Team",
                 category: "Facility Services",
                 gradient: "from-brand-secondary to-brand-accent",
               },
               {
-                image:
-                  "/gallary-img-3.jpeg",
+                image: "/gallary-img-3.jpeg",
                 title: "Industrial Safety Training",
                 category: "Training Programs",
                 gradient: "from-brand-accent to-brand-primary",
               },
               {
-                image:
-                  "/gallary-img-4.jpeg",
+                image: "/gallary-img-4.jpeg",
                 title: "Advanced Security Monitoring",
                 category: "Security Technology",
                 gradient: "from-brand-primary to-brand-accent",
               },
               {
-                image:
-                  "/gallary-img-5.jpeg",
+                image: "/gallary-img-5.jpeg",
                 title: "Surveillance Systems",
                 category: "Security Infrastructure",
                 gradient: "from-brand-secondary to-brand-primary",
               },
               {
-                image:
-                  "/gallary-img-6.jpeg",
+                image: "/gallary-img-6.jpeg",
                 title: "Professional Standards",
                 category: "Quality Assurance",
                 gradient: "from-brand-accent to-brand-secondary",
@@ -912,8 +908,7 @@ export default function Index() {
                 date: "March 15, 2024",
                 category: "Security Best Practices",
                 gradient: "from-brand-primary to-brand-secondary",
-                image:
-                  "/blog-img-1.jpeg",
+                image: "/blog-img-1.jpeg",
                 imageAlt: "Modern underground car park with security cameras",
               },
               {
@@ -923,20 +918,21 @@ export default function Index() {
                 date: "March 10, 2024",
                 category: "Training & Development",
                 gradient: "from-brand-secondary to-brand-accent",
-                image:
-                  "/blog-img-2.jpeg",
+                image: "/blog-img-2.jpeg",
                 imageAlt:
                   "Professional presenting on digital evolution and training concepts",
               },
               {
                 title: "Facility Management Excellence in 2024",
-                excerpt: "Latest trends, technologies, and best practices in facility management that drive operational efficiency and cost-effectiveness.",
+                excerpt:
+                  "Latest trends, technologies, and best practices in facility management that drive operational efficiency and cost-effectiveness.",
                 date: "March 5, 2024",
                 category: "Facility Management",
                 gradient: "from-brand-accent to-brand-primary",
                 image: "/blog-img-3.jpeg",
-                imageAlt: "Businesswoman in modern office setting demonstrating leadership"
-              }
+                imageAlt:
+                  "Businesswoman in modern office setting demonstrating leadership",
+              },
             ].map((post, index) => (
               <Card
                 key={index}
