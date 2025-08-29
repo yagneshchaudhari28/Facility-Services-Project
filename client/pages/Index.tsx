@@ -146,7 +146,7 @@ export default function Index() {
                   <Button
                     size="lg"
                     variant="outline"
-                    className="border-2 border-white text-white hover:bg-white hover:text-brand-navy shadow-xl hover-lift backdrop-blur-sm"
+                    className="border-2 border-black text-yellow hover:bg-yellow hover:text-brand-navy shadow-xl hover-lift backdrop-blur-sm"
                   >
                     <Phone className="mr-2 w-5 h-5" />
                     Call: 9890273333
